@@ -90,8 +90,8 @@ nav {
     position: relative;
     width: 100%;
     height: 100vh;
-    margin-bottom: 160px;
-    /* Extra space for categories */
+    margin-bottom: 200px;
+
 }
 
 .hero {
@@ -237,26 +237,34 @@ nav {
 /* How it works */
 .how-it-works {
     background-color: #ecf5fc;
-    padding: 60px 20px;
+    padding: 50px 20px;
     text-align: center;
-    height: 100%;
+    height: 550px;
 }
 
 .how-it-works h2 {
-    font-size: 2rem;
+    font-size: 24px;
+}
+
+.how-it-works>p {
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
+    font-weight: 700;
 }
 
 .how-boxes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: space-between;
     gap: 2rem;
-    width: 85%;
+    width: 87%;
     margin: 0 auto;
+    margin-top: -40px;
 }
 
 .box {
     background-color: white;
-    padding: 30px 20px;
+    padding: 50px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -311,4 +319,53 @@ nav {
     text-align: center;
     border-top: 1px solid #ddd;
     font-size: 14px;
+}
+
+.border {
+    border: 1px solid #ddd;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.footer-text p {
+    font-weight: 600;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-media p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+    /* padding-left: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /* margin: 0 auto 20px; */
+    border: 1px solid #ddd;
+    background-color: #66666627;
 }

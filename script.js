@@ -38,3 +38,29 @@ tl2.from(".categories .card",{
     ease:"power2.out",
     stagger:0.3
 })
+
+var tl3=gsap.timeline({
+    scrollTrigger:{
+        trigger:".how-it-works",
+        start:"top 80%",
+        end:"top 0%",
+        scrub:2,
+    }
+})
+
+
+tl3.from(".how-it-works .heading,.how-it-works .sub-heading",{
+    duration:1,
+    x:-100,
+    opacity:0,
+    ease:"power2.out",
+})
+
+
+tl3.from(".how-boxes .box",{
+    duration:1,
+    y:-100,
+    opacity:0,
+    ease:"power2.out",
+    stagger:0.3
+})

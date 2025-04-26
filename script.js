@@ -1,25 +1,40 @@
-gsap.registerPlugin(ScrollTrigger);
+var tl1=gsap.timeline();
 
-// Animate Category Cards
-gsap.from(".card", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.2,
-  scrollTrigger: {
-    trigger: "#categories",
-    start: "top 80%",
-  },
-});
+tl1.from(".logo",{
+    duration:1,
+    y:-100,
+    opacity:0,
+    ease:"power2.out"
+})
 
-// Animate How It Works Boxes
-gsap.from(".box", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.3,
-  scrollTrigger: {
-    trigger: "#how-it-works",
-    start: "top 80%",
-  },
-});
+tl1.from(".nav-links li",{
+    duration:1,
+    y:-100,
+    opacity:0,
+    ease:"power2.out",
+    stagger:0.3
+},"same")
+
+tl1.from(".hero-text",{
+    duration:1,
+    x:-100,
+    opacity:0,
+},"same")
+
+var tl2=gsap.timeline({
+    scrollTrigger:{
+        trigger:".categories",
+        start:"top 80%",
+        end:"top 30%",
+        scrub:3,
+    }
+})
+
+
+tl2.from(".categories .card",{
+    duration:1,
+    y:-100,
+    opacity:0,
+    ease:"power2.out",
+    stagger:0.3
+})

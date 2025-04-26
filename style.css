@@ -239,27 +239,29 @@ nav {
     background-color: #ecf5fc;
     padding: 60px 20px;
     text-align: center;
+    height: 100%;
 }
 
 .how-it-works h2 {
     font-size: 2rem;
-    margin-bottom: 40px;
 }
 
 .how-boxes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 2rem;
     width: 85%;
     margin: 0 auto;
 }
 
 .box {
     background-color: white;
-    padding: 1rem;
+    padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 
@@ -296,6 +298,11 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     border: 2px solid #3130306f;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
